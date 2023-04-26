@@ -1,0 +1,175 @@
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+button {
+    background-color: #3882F6;
+    color: #FFF;
+    padding: 8px 32px;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+/* kept the container divs in the center of the page */
+body > div {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    flex: 0 1;
+    flex-basis: 1023px;
+    padding: 24px 8px;
+}
+
+/* Header Section */
+
+.header {
+    background-color: #1F2937;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header p {
+    font-size: 24px;
+    font-weight: 600;
+    color: #F9FAF8;
+}
+
+.header ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.header li {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+/* Hero Section */
+
+.hero {
+    background-color: #1F2937;
+    padding: 80px 0;
+}
+
+.hero .container {
+    display: flex;
+    gap: 48px;
+    flex-wrap: wrap-reverse;
+}
+
+
+.left {
+    flex: 4 1 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #F9FAF8;
+    line-height: 60px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #E5E7EB;
+    line-height: 24px;
+}
+
+.hero button {
+    border-color: #1F2937;
+}
+
+.right {
+    background-color: rgb(110, 116, 124);
+    color: #F9FAF8;
+    font-size: 18px;
+    flex: 5 1 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Information */
+
+.info {
+    padding: 36px 0;
+}
+
+.info .container > p {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1F2937;
+    text-align: center;
+}
+
+.box-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.infobox {
+    max-width: 200px;
+}
+
+.infobox p {
+    text-align: center;
+}
+
+/* Quotation */
+
+.quote {
+    background-color: #E5E7EB;
+    padding: 72px 0;
+}
+
+.quotation {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 300;
+    max-width: 860px;
+    color: #1F2937;
+    margin: 0 auto;
+    line-height: 42px;
+}
+
+.credit {
+    font-weight: 600;
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+/* Call to Action */
+
+.cta {
+    
+}
+.blue-box {
+    background-color: #3882F6;
+}
+
+.blue-box button {
+    border-color: #fff;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #1F2937;
+    color: #E5E7EB;
+}
