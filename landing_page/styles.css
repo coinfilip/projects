@@ -189,6 +189,7 @@ h1 {
     flex-basis: 800px;
     flex-wrap: wrap;
     align-items: center;
+    padding: 0 16px;
 }
 
 .blue-box .left {
