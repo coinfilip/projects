@@ -1,9 +1,9 @@
 # projects
 
-### landing_page
+### Landing Page
 
 [Live Site](https://coinfilip.github.io/projects/landing_page/)
 
-Started: 25 Apr
+Duration: 25 Apr – 27 Apr 2023
 
-Status: In Progress
+Made as a requirement for The Odin Project. 
