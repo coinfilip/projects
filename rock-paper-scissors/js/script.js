@@ -1,11 +1,37 @@
 function game() {
     let attempts = 1;
+    let Cscore = 0;
+    let Pscore = 0;
 
     while (attempts <= 5) {
         const playerSelection = prompt("Choose your weapon", "Rock");
         const computerSelection = getComputerChoice();
         console.log(playRound(playerSelection, computerSelection));
+        Cscore = Cscore + getCompScore(playerSelection, computerSelection);
+        Pscore = Pscore + getPlayScore(playerSelection, computerSelection);
+        
         attempts++;
+    }
+    console.log(`End of game. Final score: Player ${Pscore} | Computer ${Cscore}`);
+}
+
+function getCompScore(p, c) {
+    let result = getVerdict(p, c);
+    
+    if (result == 'lose') {
+        return 1;
+    } else {
+        return 0;
+    }
+}
+
+function getPlayScore(p, c) {
+    let result = getVerdict(p, c);
+    
+    if (result == 'win') {
+        return 1;
+    } else {
+        return 0;
     }
 }
 
