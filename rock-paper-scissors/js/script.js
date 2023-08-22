@@ -1,6 +1,13 @@
-const playerSelection = "Rock";
-const computerSelection = getComputerChoice();
-console.log(playRound(playerSelection, computerSelection));
+function game() {
+    let attempts = 1;
+
+    while (attempts <= 5) {
+        const playerSelection = prompt("Choose your weapon", "Rock");
+        const computerSelection = getComputerChoice();
+        console.log(playRound(playerSelection, computerSelection));
+        attempts++;
+    }
+}
 
 function playRound(playerSelection, computerSelection) {
     let verdict;
