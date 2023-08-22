@@ -4,7 +4,8 @@ function game() {
     let Pscore = 0;
 
     while (attempts <= 5) {
-        const playerSelection = prompt("Choose your weapon", "Rock");
+        let playerprompt = prompt("Choose your weapon", "Rock");
+        const playerSelection = getProperPrompt(playerprompt);
         const computerSelection = getComputerChoice();
         console.log(playRound(playerSelection, computerSelection));
         Cscore = Cscore + getCompScore(playerSelection, computerSelection);
@@ -13,6 +14,16 @@ function game() {
         attempts++;
     }
     console.log(`End of game. Final score: Player ${Pscore} | Computer ${Cscore}`);
+}
+
+function getProperPrompt(prompt) {
+    if (prompt.toLowerCase() === 'rock') {
+        return 'Rock';
+    } else if (prompt.toLowerCase() === 'paper') {
+        return 'Paper';
+    } else {
+        return 'Scissors'
+    }
 }
 
 function getCompScore(p, c) {
